@@ -1,5 +1,5 @@
 {
-  "name": "escribano-ai",
+  "name": "escribano-ai-frontend",
   "description": "Minimal boilerplate for making chrome extensions using React and TypeScript",
   "version": "1.0.0",
   "private": true,
