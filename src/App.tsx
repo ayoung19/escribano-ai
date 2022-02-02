@@ -166,7 +166,7 @@ export const App: FC = () => {
                               setIsFlyoutVisible(false);
                             },
                             size: "s",
-                            color: "primary",
+                            color: "text",
                           }))}
                         />
                       </EuiAccordion>
