@@ -1,0 +1,12 @@
+$euiColorAccent: #ffa912;
+
+body {
+  width: 400px;
+  height: 600px;
+}
+
+textarea {
+  outline: none !important;
+}
+
+@import "@elastic/eui/src/themes/amsterdam/theme_light";
