@@ -85,7 +85,7 @@ export const App: FC = () => {
           <EuiSpacer />
           <EuiButton
             onClick={() => {
-              if (chrome.storage) {
+              if (chrome && chrome.storage) {
                 chrome.storage.local.get("useCount", ({ useCount = 0 }) => {
                   if (useCount > 1) {
                     window.open("https://www.google.com/");
