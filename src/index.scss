@@ -3,7 +3,13 @@ $euiColorAccent: #ffa912;
 body {
   width: 400px;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 100%;
+  }
 }
 
 textarea {

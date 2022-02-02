@@ -107,9 +107,10 @@ export const App: FC = () => {
 
               setIsLoading(true);
               fetch(
-                `https://76706.wayscript.io/get?${new URLSearchParams({
-                  value: input,
-                })}`
+                // `https://76706.wayscript.io/get?${new URLSearchParams({
+                //   value: input,
+                // })}`
+                "https://78103.wayscript.io/get"
               )
                 .then((response) => response.json())
                 .then((data) => {
