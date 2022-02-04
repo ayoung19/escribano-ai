@@ -87,8 +87,8 @@ export const App: FC = () => {
             onClick={() => {
               if (typeof chrome !== "undefined" && chrome.storage) {
                 chrome.storage.local.get("useCount", ({ useCount = 0 }) => {
-                  if (useCount > 1) {
-                    window.open("https://www.google.com/");
+                  if (useCount > 2) {
+                    window.open("https://www.escribano.info/fin-prueba");
                     return;
                   }
 
@@ -97,8 +97,8 @@ export const App: FC = () => {
               } else {
                 const useCount = Number(localStorage.getItem("useCount"));
 
-                if (useCount > 1) {
-                  window.open("https://www.google.com/");
+                if (useCount > 2) {
+                  window.open("https://www.escribano.info/fin-prueba");
                   return;
                 }
 
@@ -107,10 +107,9 @@ export const App: FC = () => {
 
               setIsLoading(true);
               fetch(
-                // `https://76706.wayscript.io/get?${new URLSearchParams({
-                //   value: input,
-                // })}`
-                "https://78103.wayscript.io/get"
+                `https://76706.wayscript.io/get?${new URLSearchParams({
+                  value: input,
+                })}`
               )
                 .then((response) => response.json())
                 .then((data) => {
