@@ -191,7 +191,7 @@ export const App: FC = () => {
               <>
                 {i > 0 && <EuiHorizontalRule />}
                 <EuiText size="s">
-                  <p>{option}</p>
+                  {option.split("\n").map((paragraph) => <p>{paragraph}</p>)}
                 </EuiText>
                 <EuiSpacer size="m" />
                 <EuiFlexGroup
